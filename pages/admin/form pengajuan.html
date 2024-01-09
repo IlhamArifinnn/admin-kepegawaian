@@ -28,6 +28,7 @@
       rel="stylesheet"
       href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css"
     />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
   </head>
@@ -279,8 +280,8 @@
             >
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+               <li class="nav-item">
+                <a href="dahsboar.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Dashboard
@@ -289,36 +290,36 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
+                    <a href="daftar pegawai.html" class="nav-link">
+                      <i class="fa fa-table nav-icon nav-icon"></i>
                       <p>Table Pegawai</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
+                    <a href="pengajuan-lembur.html" class="nav-link">
+                      <i class="fa fa-table nav-icon nav-icon"></i>
                       <p>Tabel Pengajuan Lembur</p>
                     </a>
                   </li>
                   
                 </ul>
               </li>
-             
+
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-bookmark nav-icon"></i>
                   <p>Time Attendece</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-tags nav-icon"></i>
                   <p>Overtime</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                <a href="login.html" class="nav-link">
+                  <i class="fa fa-sign-out nav-icon"></i>
                   <p>Log Out</p>
                 </a>
               </li>
@@ -335,19 +336,20 @@
         <section class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1>DataTables</h1>
+              <div class="col-sm-12">
+                <h1>Pengajuan Lembur Pegawai</h1>
               </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
+              <div class="col-sm-12 mt-2">
+                <ol class="breadcrumb ">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">DataTables</li>
+                  <li class="breadcrumb-item active">Pengajuan Lembur Pegawai</li>
                 </ol>
               </div>
             </div>
           </div>
           <!-- /.container-fluid -->
         </section>
+
 
         <!-- Main content -->
         <section class="content">
@@ -370,17 +372,27 @@
                                 <input type="date" class="form-control" id="namaPegawai" name="namaPegawai"  required>
                             </div>
                         </div>
-                        <div class="row form-group mt-3 ">
-                            <div class="form-group col-sm-6 mb-2">
-                                <label for="tempatTanggalLahir" class="col-sm-2 col-form-label ml-3">Jam Mulai Lembur</label>
-                                <input type="text" class="form-control" id="tempatLahir" placeholder="Tempat" required>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label for="jamTanggalServis" class="col-form-label ml-3">Jam Akhir Lembur</label>
-                                <input type="date" class="form-control" id="jamTanggalServis" required>
-                            </div>
-                        </div>
-                        
+                        <div class="container">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group mt-3 row">
+                                      <label for="inputLabel1" class="col-sm-4 col-form-label text-sm-right">Jam Mulai Lembur</label>
+                                      <div class="col-sm-6">
+                                          <input type="time" class="form-control" id="inputLabel1" placeholder="Input 1" required>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group mt-3 row">
+                                      <label for="inputLabel2" class="col-sm-4 col-form-label text-sm-right">Jam Akhir Lembur</label>
+                                      <div class="col-sm-6">
+                                          <input type="time" class="form-control" id="inputLabel2" placeholder="Input 2" required>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
                         <div class="form-group mt-3 row">
                             <label for="deskripsi" class="col-sm-2 col-form-label ml-3">Deskripsi Pekerjaan</label>
                             <div class="col-sm-9">

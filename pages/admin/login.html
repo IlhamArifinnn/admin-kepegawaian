@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css"
     />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
   </head>
@@ -41,10 +42,11 @@
               <div class="card-body login-card-body rounded">
                 <h4 class="login-box-msg">Silahkan Login</h4>
 
-                <form action="../../index3.html" method="post">
+                <form id="form" method="post">
                   <div class="input-group mb-3">
                     <input
                       type="email"
+                      id="mail"
                       class="form-control"
                       placeholder="Email"
                     />
@@ -56,6 +58,7 @@
                   </div>
                   <div class="input-group mb-3">
                     <input
+                    id="pass"
                       type="password"
                       class="form-control"
                       placeholder="Password"
@@ -75,7 +78,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-12 d-flex justify-content-center">
-                      <button type="submit" class="btn btn-primary btn-block mt-2">
+                      <button type="submit"  class="btn btn-primary btn-block mt-2" onclick="login()">
                         Login
                       </button>
                     </div>
@@ -101,5 +104,6 @@
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="../../plugins/script.js"></script>
   </body>
 </html>
