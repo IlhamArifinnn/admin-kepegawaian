@@ -300,10 +300,9 @@
                       <p>Tabel Pengajuan Lembur</p>
                     </a>
                   </li>
-                  
                 </ul>
               </li>
-             
+
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -335,11 +334,11 @@
         <section class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1>DataTables</h1>
+              <div class="col-sm-12">
+                <h1>Daftar Pegawai</h1>
               </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
+              <div class="col-sm-12">
+                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active">DataTables</li>
                 </ol>
@@ -353,48 +352,87 @@
         <section class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12">         
-                <div class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body">
-                    <table class="table table-bordered table-hover" id="example2">
+              <div class="col-12">
+                <fieldset class="card p-1" style="border: 2px solid">
+                  <legend class="float-none w-auto ml-2">Data Pegawai</legend>
+                  <div class="card">
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table
+                        class="table table-bordered table-hover"
+                        id="example2"
+                      >
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col"></th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Jabatan</th>
+                            <th scope="col">Tempat Lahir</th>
+                            <th scope="col">Tanggal Lahir</th>
+                            <th scope="col">Aktif</th>
+                            <th scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>Budi Darmawan</td>
+                            <td>Direktur</td>
+                            <td>Bogor</td>
+                            <td>2000-10-11</td>
+                            <td><input type="checkbox" /></td>
+                            <td>
+                              <a href="">View</a> |
+                              <a href="">Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>Annisa Amalia</td>
+                            <td>Manajer</td>
+                            <td>Surabaya</td>
+                            <td>2001-05-21</td>
+                            <td><input type="checkbox" /></td>
+                            <td>
+                              <a href="">View</a> |
+                              <a href="">Edit</a>
+                            </td>
                           </tr>
                           <tr>
                             <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <td>Eddy Pardiman</td>
+                            <td>Staff</td>
+                            <td>Cilacap</td>
+                            <td>1999-07-15</td>
+                            <td><input type="checkbox" /></td>
+                            <td>
+                              <a href="">View</a> |
+                              <a href="">Edit</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Budi Darmawan</td>
+                            <td>Direktur</td>
+                            <td>Depok</td>
+                            <td>2003-01-04</td>
+                            <td><input type="checkbox" /></td>
+                            <td>
+                              <a href="">View</a> |
+                              <a href="">Edit</a>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
-                    <button type="button" class="btn btn-success mt-4"><a href="tambah-pegawai.html" class="text-white">Create Pegawai</a></button>
-
+                      <button type="button" class="btn btn-success mt-4">
+                        <a href="tambah-pegawai.html" class="text-white"
+                          >Create Pegawai</a
+                        >
+                      </button>
+                    </div>
+                    <!-- /.card-body -->
                   </div>
-                  <!-- /.card-body -->
-                </div>
+                </fieldset>
                 <!-- /.card -->
               </div>
               <!-- /.col -->
@@ -407,12 +445,7 @@
       </div>
       <!-- /.content-wrapper -->
       <footer class="main-footer">
-        <div class="float-right d-none d-sm-block"><b>Version</b> 3.2.0</div>
-        <strong
-          >Copyright &copy; 2014-2021
-          <a href="https://adminlte.io">AdminLTE.io</a>.</strong
-        >
-        All rights reserved.
+        <strong>Develop By Mahasiswa STT-NF @2023 </strong>
       </footer>
 
       <!-- Control Sidebar -->

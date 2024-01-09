@@ -353,95 +353,71 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
-                  </div>
-                  <form>
-                    <div class="form-group mt-3 row">
-                      <div class="col-12 col-lg-2">
-                        <label for="kategoriMinjam" class="col-form-label pl-4"
-                          >Bulan Dan Tahun</label
-                        >
-                      </div>
-
-                      <div class="row ml-3">
-                        <div class="col-sm-6 mb-2">
-                          <select
-                            class="form-control"
-                            id="kategoriMinjam"
-                            name="kategoriMinjam"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Pilih Kategori
-                            </option>
-                            <option value="1">Kategori 1</option>
-                            <option value="2">Kategori 2</option>
-                            <!-- Tambahkan opsi sesuai kebutuhan -->
-                          </select>
-                        </div>
-                        <div class="col-sm-6">
-                          <select
-                            class="form-control"
-                            id="kategoriMinjam"
-                            name="kategoriMinjam"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Pilih Kategori
-                            </option>
-                            <option value="1">Kategori 1</option>
-                            <option value="2">Kategori 2</option>
-                            <!-- Tambahkan opsi sesuai kebutuhan -->
-                          </select>
-                        </div>
-                      </div>
+                <fieldset class="card p-1" style="border: 2px solid">
+                  <legend class="float-none w-auto ml-2">
+                    Daftar Pengajuan Lembur Pegawai
+                  </legend>
+                  <div class="row ">
+                    <div class="col-sm-3 ">
+                      <label for="" class="ml-4">Tanggal- Bulan - Tahun</label>
                     </div>
-                  </form>
-                  <!-- /.card-header -->
-                  <div class="card-body">
-                    <table
-                      class="table table-bordered table-hover"
-                      id="example2"
-                    >
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <button type="button" class="btn btn-success mt-4">
-                      <a href="tambah-pegawai.html" class="text-white"
-                        >Create Pegawai</a
-                      >
-                    </button>
+                      <div class="col-sm-9">
+                        <input type="date" class="form-control">
+                      </div>
                   </div>
-                  <!-- /.card-body -->
-                </div>
+                    <div class="card-body">
+                      <table
+                        class="table table-bordered table-hover"
+                        id="example2"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Jabatan</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Jam Mulai</th>
+                            <th scope="col">Jam Akhir</th>
+                            <th scope="col">Disetujui</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Budi Darmawan</td>
+                            <td>Direktur</td>
+                            <td>2023-11-10</td>
+                            <td>17.00</td>
+                            <td>20.00</td>
+                            <td><input type="checkbox" /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Annisa Amalia</td>
+                            <td>Manajer</td>
+                            <td>2023-11-10</td>
+                            <td>17.00</td>
+                            <td>21.00</td>
+                            <td><input type="checkbox" /></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Eddy Pardiman</td>
+                            <td>Staff</td>
+                            <td>2023-11-26</td>
+                            <td>17.00</td>
+                            <td>22.00</td>
+                            <td><input type="checkbox" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="button" class="btn btn-success mt-4">
+                        <a href="tambah-pegawai.html" class="text-white"
+                          >Create Pegawai</a
+                        >
+                      </button>
+                    <!-- /.card-body -->
+                </fieldset>
                 <!-- /.card -->
               </div>
               <!-- /.col -->
@@ -453,13 +429,9 @@
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
+
       <footer class="main-footer">
-        <div class="float-right d-none d-sm-block"><b>Version</b> 3.2.0</div>
-        <strong
-          >Copyright &copy; 2014-2021
-          <a href="https://adminlte.io">AdminLTE.io</a>.</strong
-        >
-        All rights reserved.
+        <strong>Develop By Mahasiswa STT-NF @2023 </strong>
       </footer>
 
       <!-- Control Sidebar -->
